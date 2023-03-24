@@ -1,0 +1,87 @@
+:root {
+    --back: rgb(28, 2, 28);
+    --morecolor: deeppink;
+    --general-font: 'Calibri', sans-serif;
+    --header-font: 'Cambria', serif;
+}
+/*Body default style*/
+body {
+    background-color: var(--back);
+    font-family: var(--general-font);
+    font-size: 100%;
+}
+/*Header Style */
+header {
+    max-width: 800px;
+    width: 100%;
+    padding: 0 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+header h1 {
+    color: var(--morecolor);
+    font-size: 200%;
+    margin: 30px 0 15px;
+    text-align: center;
+    font-family: var(--header-font);
+}
+header p {
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+}
+/*Main Info Style */
+section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+section card {
+    flex: 1 1 300px;
+    border: 2px dashed #077ac1;
+    color: var(--morecolor);
+    padding: 0 15px 15px;
+    margin: 0 20px 40px;
+}
+section h2 {
+    font-size: 125%;
+    width: 80%;
+    border: 2px solid #e563d6;
+    border-radius:6px;
+    position:relative;
+    top:-15px;
+    background-color: var(--back);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--header-font)
+}
+section p {
+    color: var(--morecolor);
+    margin-bottom: 10px;
+}
+
+section pre {
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    background: linear-gradient(180deg, #045575, #d23282);
+    font-size: 100%;
+    white-space: pre-wrap;
+    user-select: all;
+}
+/*Card Style */
+card, card h2{
+    transition:all .5s ease-in-out;
+}
+card:hover, card:hover h2 {
+    box-shadow: inset 0px 0px 10px var(--morecolor)
+}
+/*Footer Style */
+footer {
+    color: #0faee2;
+    margin-bottom: 50px;
+    text-align: center;
+}
